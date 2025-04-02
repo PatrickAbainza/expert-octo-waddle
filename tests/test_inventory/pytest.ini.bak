@@ -1,0 +1,15 @@
+[pytest]
+# testpaths = tests/test_inventory/test_unit
+python_files = test_*.py
+python_functions = test_*
+addopts =
+    --verbose
+    --cov=inventory
+    --cov-report=term-missing
+    --cov-report=html
+    --cov-branch
+    --no-cov-on-fail
+markers =
+    unit: Unit tests for individual components
+    integration: Integration tests between components
+    slow: Tests that take longer to run

@@ -51,3 +51,8 @@ poetry.lock
 *.log
 /memory-bank
 /misc
+*.db
+
+# Roo Cline specific
+.roo/
+.roomodes
